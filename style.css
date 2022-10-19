@@ -108,7 +108,7 @@ main{
 }
 .socials{
     display: grid;
-    grid-template-columns: 60px 350px;
+    grid-template-columns: 60px 300px 50px;
     align-items: center;
 }
 .michelle{
@@ -134,7 +134,7 @@ main{
     justify-content: center;
     width: 200px;
     margin-top: -110px;
-    margin-left: 320px;
+    margin-left: 275px;
     font-weight: 400;
     align-items: center;
     gap: 10px;
@@ -144,4 +144,50 @@ main{
     border-radius: 10px;
     padding: 10px;
     display: none;
+}
+@media (max-width: 750px){
+  main{
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+}
+.drawer img{
+  width: 100%;
+  object-fit: cover;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 25px;
+  max-width: 500px;
+  margin-left: 0px;
+}
+.share{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+}
+.pop-up{
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: -40px;
+    font-weight: 400;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    display: none;
+}
 }
